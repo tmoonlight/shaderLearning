@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"F:/1-美工版/飞船2分层/frigate2.png","X:/Users/shaoh/source/repos/Game3/Game3/Content/bin/DesktopGL/Content/frigate2.xnb","TextureProcessor","Texture2DContent",12266,29277,0.4491012
+"X:/Users/shaoh/source/repos/Game3/Game3/Content/my1stFX.fx","X:/Users/shaoh/source/repos/Game3/Game3/Content/bin/DesktopGL/Content/my1stFX.xnb","EffectProcessor","CompiledEffectContent",2001,701,0.4649987

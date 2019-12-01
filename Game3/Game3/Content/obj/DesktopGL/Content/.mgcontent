@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>F:/1-美工版/飞船2分层/frigate2.png</File>
+    <File>X:/Users/shaoh/source/repos/Game3/Game3/Content/my1stFX.fx</File>
+  </SourceFiles>
+  <DestFiles>
+    <File>frigate2.png</File>
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
