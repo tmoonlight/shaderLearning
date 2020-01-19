@@ -7,21 +7,25 @@
 #define PS_SHADERMODEL ps_4_0_level_9_1
 #endif
 
-Texture2D SpriteTexture;
-sampler s0;
-float4 example = float4(2, 3, 4, 5);
+//Texture2D SpriteTexture;
+sampler s0 : register(s0);
+float4 haha1;
+float4 haha;
+float param1;
+float2 ttt;
+//float4 example = float4(2, 3, 4, 5);
 
-sampler2D SpriteTextureSampler = sampler_state
-{
-	Texture = (SpriteTexture);
-};
+//sampler2D SpriteTextureSampler = sampler_state
+//{
+//	Texture = (SpriteTexture);
+//};
 
-struct VertexShaderOutput
-{
-	float4 Position : SV_POSITION;
-	float4 Color : COLOR0;
-	float2 TextureCoordinates : TEXCOORD0;
-};
+//struct VertexShaderOutput
+//{
+//	float4 Position : SV_POSITION;
+//	float4 Color : COLOR0;
+//	//float2 TextureCoordinates : TEXCOORD0;
+//};
 
 float4 PixelShaderFunction(float2 coords: TEXCOORD) : COLOR0
 {
@@ -39,7 +43,7 @@ float4 PixelShaderFunction(float2 coords: TEXCOORD) : COLOR0
 	return color;
 }
 
-float4 MainPS(float2 coords: TEXCOORD) : COLOR0
+float4 MainPS2(float2 coco : DEPTH0, float2 coords: TEXCOORD) : COLOR0
 {
 	//return tex2D(SpriteTextureSampler,input.TextureCoordinates) * input.Color;
 	//float4 color = tex2D(s0, input.TextureCoordinates);
@@ -54,12 +58,38 @@ float4 MainPS(float2 coords: TEXCOORD) : COLOR0
 	//{
 	//	return color;
 	//}
-	if (color.a < .9f)
+	if (color.a < param1)
 	{
-		color = float4(1, 0, 0, 0.8);
+		color = float4(.9f,.4f,.4f,1);
+		//color = haha1;
 	}
 	return color;
 }
+
+float4 MainPS(/*float2 coco : DEPTH0, */float2 coords: TEXCOORD,float4 mycolor:COLOR0) : COLOR0
+{
+	//return tex2D(SpriteTextureSampler,input.TextureCoordinates) * input.Color;
+	//float4 color = tex2D(s0, input.TextureCoordinates);
+	//float4 color = tex2D(s0,coords);
+	///*float4 coloru = tex2D(s0, float2(coords.x, coords.y - 1));
+	//float4 colord = tex2D(s0, float2(coords.x, coords.y + 1));
+	//float4 colorl = tex2D(s0, float2(coords.x - 1, coords.y));
+	//float4 colorr = tex2D(s0, float2(coords.x + 1, coords.y));*/
+
+	//if (!any(color)) return color;//没颜色则返回
+	////if (any(coloru) && any(colord) && any(colorl) && any(colorr))  //有颜色
+	////{
+	////	return color;
+	////}
+	//if (color.a < param1)
+	//{
+	//	color = float4(.9f,.4f,.4f,1);
+	//	//color = haha1;
+	//}
+    return mycolor;
+}
+
+
 
 technique SpriteDrawing
 {

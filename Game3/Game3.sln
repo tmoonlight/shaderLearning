@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game3", "Game3\Game3.csproj", "{7F530EEC-1FCE-41CD-9E87-D890B730B807}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game1Shader", "Game1Shader\Game1Shader.csproj", "{A03A18BD-73AA-4AB7-AA79-B3D5631B06DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game1", "Game1\Game1.csproj", "{046DD1A8-42D1-406C-B135-DC7C81AF65A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{DAF11713-2D49-4BC7-9ACF-AF22849BCF05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,22 @@ Global
 		{7F530EEC-1FCE-41CD-9E87-D890B730B807}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F530EEC-1FCE-41CD-9E87-D890B730B807}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F530EEC-1FCE-41CD-9E87-D890B730B807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03A18BD-73AA-4AB7-AA79-B3D5631B06DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03A18BD-73AA-4AB7-AA79-B3D5631B06DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03A18BD-73AA-4AB7-AA79-B3D5631B06DC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A03A18BD-73AA-4AB7-AA79-B3D5631B06DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03A18BD-73AA-4AB7-AA79-B3D5631B06DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03A18BD-73AA-4AB7-AA79-B3D5631B06DC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{046DD1A8-42D1-406C-B135-DC7C81AF65A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046DD1A8-42D1-406C-B135-DC7C81AF65A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046DD1A8-42D1-406C-B135-DC7C81AF65A5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{046DD1A8-42D1-406C-B135-DC7C81AF65A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046DD1A8-42D1-406C-B135-DC7C81AF65A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046DD1A8-42D1-406C-B135-DC7C81AF65A5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DAF11713-2D49-4BC7-9ACF-AF22849BCF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF11713-2D49-4BC7-9ACF-AF22849BCF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF11713-2D49-4BC7-9ACF-AF22849BCF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF11713-2D49-4BC7-9ACF-AF22849BCF05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

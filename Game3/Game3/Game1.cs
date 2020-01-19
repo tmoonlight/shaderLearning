@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System.Runtime.InteropServices;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -12,7 +13,9 @@ namespace Game3
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         private Texture2D frigateTexture;
+        private Texture2D frigateTexture_n1;
         private Effect effect;
+        private Effect effect_my_normal_map;
 
         public Game1()
         {
@@ -42,7 +45,9 @@ namespace Game3
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             frigateTexture = Content.Load<Texture2D>("frigate2");
+            frigateTexture_n1 = Content.Load<Texture2D>("frigate2_n1");
             effect = Content.Load<Effect>("my1stFX");
+            effect_my_normal_map = Content.Load<Effect>("my_normal_map");
             // TODO: use this.Content to load your game content here
         }
 
@@ -78,10 +83,16 @@ namespace Game3
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+          //  // TODO: Add your drawing code here
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
+          //effect.Parameters["param1"].SetValue(.9f);
+          //  //effect.Parameters["haha1"].SetValue(new float[] { .9f });
             effect.CurrentTechnique.Passes[0].Apply();
-            spriteBatch.Draw(frigateTexture,Vector2.Zero,Color.White);
+          //// effect.Parameters["haha"].SetValue(new float[] { .1f, .2f, .3f });
+            
+
+            spriteBatch.Draw(frigateTexture, Vector2.Zero, Color.White);
+            spriteBatch.Draw(frigateTexture, Vector2.One * 30, Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
         }

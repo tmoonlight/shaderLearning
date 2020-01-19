@@ -2,8 +2,8 @@
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>F:/1-美工版/飞船2分层/frigate2.png</SourceFile>
   <SourceTime>2012-05-09T12:25:54+08:00</SourceTime>
-  <DestFile>X:/Users/shaoh/source/repos/Game3/Game3/Content/bin/DesktopGL/Content/frigate2.xnb</DestFile>
-  <DestTime>2019-12-01T11:33:26.7803548+08:00</DestTime>
+  <DestFile>X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/frigate2.xnb</DestFile>
+  <DestTime>2020-01-18T09:40:09.6319816+08:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T00:35:54+08:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
