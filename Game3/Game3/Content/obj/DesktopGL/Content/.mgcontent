@@ -4,15 +4,21 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>F:/1-美工版/飞船2分层/frigate2.png</File>
-    <File>X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/frigate2_n.png</File>
-    <File>X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/frigate2_n1.png</File>
-    <File>X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/my_normal_map.fx</File>
-    <File>X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/my1stFX.fx</File>
-    <File>X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/test_again.fx</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/File.fx</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/frigate2_n.png</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/frigate2_n1.png</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/lightmask.png</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/my_normal_map.fx</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/my1stFX.fx</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/reductionEffect.fx</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/resolveShadowsEffect.fx</File>
+    <File>D:/3000git/shaderLearning/Game3/Game3/Content/test_again.fx</File>
   </SourceFiles>
   <DestFiles>
-    <File>frigate2.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

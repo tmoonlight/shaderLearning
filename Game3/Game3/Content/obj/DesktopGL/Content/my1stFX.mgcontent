@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/my1stFX.fx</SourceFile>
-  <SourceTime>2020-01-18T11:51:08.2582965+08:00</SourceTime>
-  <DestFile>X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/my1stFX.xnb</DestFile>
-  <DestTime>2020-01-18T11:51:12.1062972+08:00</DestTime>
+  <SourceFile>D:/3000git/shaderLearning/Game3/Game3/Content/my1stFX.fx</SourceFile>
+  <SourceTime>2020-01-20T09:53:35.8246879+08:00</SourceTime>
+  <DestFile>D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/my1stFX.xnb</DestFile>
+  <DestTime>2020-01-20T12:03:25.1725648+08:00</DestTime>
   <Importer>EffectImporter</Importer>
   <ImporterTime>2018-12-09T00:35:54+08:00</ImporterTime>
   <Processor>EffectProcessor</Processor>

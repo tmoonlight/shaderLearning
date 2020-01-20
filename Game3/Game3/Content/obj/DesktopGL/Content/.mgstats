@@ -1,7 +1,10 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"F:/1-美工版/飞船2分层/frigate2.png","X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/frigate2.xnb","TextureProcessor","Texture2DContent",12266,29277,0.1620002
-"X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/frigate2_n.png","X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/frigate2_n.xnb","TextureProcessor","Texture2DContent",4541,29277,0.6850035
-"X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/frigate2_n1.png","X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/frigate2_n1.xnb","TextureProcessor","Texture2DContent",4538,29277,0.0229994
-"X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/my_normal_map.fx","X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/my_normal_map.xnb","EffectProcessor","CompiledEffectContent",843,1249,0.2460831
-"X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/my1stFX.fx","X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/my1stFX.xnb","EffectProcessor","CompiledEffectContent",2975,399,0.3889894
-"X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/test_again.fx","X:/Users/shaoh/source/repos/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/test_again.xnb","EffectProcessor","CompiledEffectContent",843,1249,0.109001
+"D:/3000git/shaderLearning/Game3/Game3/Content/File.fx","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/File.xnb","EffectProcessor","CompiledEffectContent",888,1249,1.568
+"D:/3000git/shaderLearning/Game3/Game3/Content/frigate2_n.png","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/frigate2_n.xnb","TextureProcessor","Texture2DContent",4541,29277,0.221
+"D:/3000git/shaderLearning/Game3/Game3/Content/frigate2_n1.png","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/frigate2_n1.xnb","TextureProcessor","Texture2DContent",4538,29277,0.007
+"D:/3000git/shaderLearning/Game3/Game3/Content/lightmask.png","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/lightmask.xnb","TextureProcessor","Texture2DContent",36896,250085,0.01
+"D:/3000git/shaderLearning/Game3/Game3/Content/my_normal_map.fx","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/my_normal_map.xnb","EffectProcessor","CompiledEffectContent",888,1249,0.082
+"D:/3000git/shaderLearning/Game3/Game3/Content/my1stFX.fx","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/my1stFX.xnb","EffectProcessor","CompiledEffectContent",2975,399,0.112
+"D:/3000git/shaderLearning/Game3/Game3/Content/reductionEffect.fx","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/reductionEffect.xnb","EffectProcessor","CompiledEffectContent",1462,1946,0.508
+"D:/3000git/shaderLearning/Game3/Game3/Content/resolveShadowsEffect.fx","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/resolveShadowsEffect.xnb","EffectProcessor","CompiledEffectContent",7750,10245,0.269
+"D:/3000git/shaderLearning/Game3/Game3/Content/test_again.fx","D:/3000git/shaderLearning/Game3/Game3/Content/bin/DesktopGL/Content/test_again.xnb","EffectProcessor","CompiledEffectContent",888,1249,0.102

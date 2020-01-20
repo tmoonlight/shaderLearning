@@ -45,6 +45,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game1.cs" />
+    <Compile Include="PostProcessing\BasePostProcess.cs" />
+    <Compile Include="PostProcessing\BasePostProcessingEffect.cs" />
+    <Compile Include="PostProcessing\PostProcessingEffects\CrepuscularRays.cs" />
+    <Compile Include="PostProcessing\PostProcessingManager.cs" />
+    <Compile Include="PostProcessing\PostProcess\LightRay.cs" />
+    <Compile Include="PostProcessing\PostProcess\LightSourceMask.cs" />
+    <Compile Include="PostProcessing\ScreenQuad.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -106,6 +113,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="app.manifest" />
+    <None Include="Content\Fonts\font.spritefont" />
+    <None Include="Content\PPVertexShader.fxh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Shaders\PostProcessing\PPVertexShader.fxh" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +133,18 @@
   <ItemGroup>
     <Content Include="Content\frigate2_n.png" />
     <Content Include="Content\frigate2_n1.png" />
+    <Content Include="Content\Shaders\PostProcessing\BrightPass.fx" />
+    <Content Include="Content\Shaders\PostProcessing\LightSourceMask.fx" />
+    <Content Include="Content\Shaders\PostProcessing\LigthRays.fx" />
+    <Content Include="Content\Shaders\PostProcessing\SceneBlend.fx" />
+    <Content Include="Content\Textures\Backgrounds\BGForeGround_1_1.png" />
+    <Content Include="Content\Textures\Backgrounds\BGForeGround_1_2.png" />
+    <Content Include="Content\Textures\Backgrounds\BGForeGround_1_3.png" />
+    <Content Include="Content\Textures\flare.png" />
+    <Content Include="Content\Textures\flare2.png" />
+    <Content Include="Content\Textures\flare3.png" />
+    <Content Include="Content\Textures\flare4.png" />
+    <Content Include="Content\Textures\MouseMask.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

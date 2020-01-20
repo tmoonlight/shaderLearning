@@ -1,4 +1,6 @@
-﻿#if OPENGL
+﻿#include "PPVertexShader.fxh"
+
+#if OPENGL
 #define SV_POSITION POSITION
 #define VS_SHADERMODEL vs_3_0
 #define PS_SHADERMODEL ps_3_0
@@ -43,6 +45,8 @@ float4 PixelShaderFunction(float2 coords: TEXCOORD) : COLOR0
 	return color;
 }
 
+const
+
 float4 MainPS2(float2 coco : DEPTH0, float2 coords: TEXCOORD) : COLOR0
 {
 	//return tex2D(SpriteTextureSampler,input.TextureCoordinates) * input.Color;
@@ -66,27 +70,36 @@ float4 MainPS2(float2 coco : DEPTH0, float2 coords: TEXCOORD) : COLOR0
 	return color;
 }
 
-float4 MainPS(/*float2 coco : DEPTH0, */float2 coords: TEXCOORD,float4 mycolor:COLOR0) : COLOR0
+float4 MainPS(/*float2 coco : DEPTH0, */float2 coords: TEXCOORD) : COLOR0
 {
+    if (coords.x > .5f && coords.y > .5f)
+        return 0;
 	//return tex2D(SpriteTextureSampler,input.TextureCoordinates) * input.Color;
 	//float4 color = tex2D(s0, input.TextureCoordinates);
-	//float4 color = tex2D(s0,coords);
+        float4 color = tex2D(s0, coords);
 	///*float4 coloru = tex2D(s0, float2(coords.x, coords.y - 1));
 	//float4 colord = tex2D(s0, float2(coords.x, coords.y + 1));
 	//float4 colorl = tex2D(s0, float2(coords.x - 1, coords.y));
 	//float4 colorr = tex2D(s0, float2(coords.x + 1, coords.y));*/
 
-	//if (!any(color)) return color;//没颜色则返回
-	////if (any(coloru) && any(colord) && any(colorl) && any(colorr))  //有颜色
+	if (!any(color)) return color;//没颜色则返回
+	//if (any(coloru) && any(colord) && any(colorl) && any(colorr))  //有颜色
 	////{
 	////	return color;
 	////}
-	//if (color.a < param1)
-	//{
-	//	color = float4(.9f,.4f,.4f,1);
-	//	//color = haha1;
-	//}
-    return mycolor;
+	if (color.a < param1)
+	{
+		color = float4(.9f,.4f,.4f,1);
+		//color = haha1;
+	}
+    return color;
+}
+
+float4 NoSampPS( /*float2 coco : DEPTH0, */float2 coords : TEXCOORD) : COLOR0
+{
+    float3 color = float3(1.0, 1.0, 1.0);
+    color = distance(coords, 0.3) * color;
+    return float4(color,1.0);
 }
 
 
@@ -95,7 +108,8 @@ technique SpriteDrawing
 {
 	pass P0
 	{
+        //VertexShader = compile VS_SHADERMODEL VertexShaderFunction();
 		//PixelShader = compile PS_SHADERMODEL PixelShaderFunction();
-		PixelShader = compile PS_SHADERMODEL MainPS();
-	}
+        PixelShader = compile PS_SHADERMODEL NoSampPS();
+    }
 };
